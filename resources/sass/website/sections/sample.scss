@@ -1,0 +1,33 @@
+.sample {
+    position: relative;
+    z-index: auto;
+    border-radius: 20px 50px 20px 20px;
+    background: linear-gradient(to right, #fff 0, #fff 100%) top left no-repeat,
+        linear-gradient(to right, #fff 0, #fff 100%) bottom left no-repeat;
+    background-size: auto, auto;
+    background-size: calc(100% - 58px) 52px, 100% calc(100% - 52px);
+    max-width: 320px;
+    box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.08);
+    padding-top: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 100%;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+}
+
+.sample::before {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 59px;
+    height: 54px;
+    right: 0;
+    top: 0;
+    background: url("/img/samples_decor.svg");
+    pointer-events: none;
+}
+
+.sample .h3 {
+    font-size: 22px;
+}

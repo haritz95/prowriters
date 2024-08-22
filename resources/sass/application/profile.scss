@@ -1,0 +1,15 @@
+
+.pt-100 {
+    padding-top: 6.25rem;
+}
+.profile-photo-holder {
+    margin-top: 0px;
+    padding: 20px;
+}
+
+@include media-breakpoint-up(sm) {
+    .profile-photo-holder {
+        margin-top: -52px;
+        padding: 0;
+    }
+  }

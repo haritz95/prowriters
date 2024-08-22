@@ -1,0 +1,97 @@
+
+// .testimonials .section__header{
+//     height: 366px;
+//     padding-top:100px;
+//     padding-left: 90px;   
+   
+   
+// }
+
+// .testimonials .section__title{
+//     color:#fff;
+// }
+
+// .testimonials .section__header::after {
+//     content: "";
+//     position: absolute;
+//     left: -30vw;
+//     right: -2rem;
+//     top: 0;
+//     bottom: 0;
+//     z-index: -1;
+//     border-radius: 0 16px 16px 0;
+//     background: #f5f5f5;
+//         background-image: none;
+//     //background-image: linear-gradient(55deg,#9d64ec 15%,#7a7bf4 40%,#85b5f1);
+// }
+
+@media screen and (max-width: 1200px) {
+.testimonials .section__header::after {
+    left: 0px;
+    right:0px;
+  }
+}
+
+.testimonial__text {
+    position: relative;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.testimonial__footer {
+    font-size: 16px;
+    font-size: 1.14286rem;
+    font-weight: 600;
+    color: #252525;
+    font-style: normal;
+}
+
+.testimonial__wrapper .slick-active .testimonial__text::after, 
+.testimonial__wrapper .slick-active .testimonial__text::before {
+    content: "";
+    display: block;
+    width: 35px;
+    height: 35px;
+    transition: width .4s ease;
+   position: absolute;
+    background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNC45OCAyNSI+PHBhdGggZmlsbD0iIzc3NkVGRiIgZD0iTTguMjQgMEMyLjg3IDQuOTMgMCAxMC4xNCAwIDE0LjkzIDAgMjAuOCAzLjE1IDI1IDcuNjcgMjVjMy45NCAwIDcuMjQtMy40MSA3LjI0LTcuNTQgMC0zLjk5LTMuMjMtNy4zOS03LjEtNy4zOS42NS0yLjM5IDIuMjktNC44NSA0LjU5LTYuODhMOC4yNCAwem0yMC4wOCAwYy01LjM4IDQuOTMtOC4yNCAxMC4xNC04LjI0IDE0LjkzIDAgNS44NyAzLjE1IDEwLjA3IDcuNjcgMTAuMDcgMy45NCAwIDcuMjQtMy40MSA3LjI0LTcuNTQgMC0zLjk5LTMuMjMtNy4zOS03LjEtNy4zOS42NC0yLjM5IDIuMjktNC44NSA0LjU5LTYuODhMMjguMzIgMHoiLz48L3N2Zz4=") no-repeat 0 0/contain;
+}
+
+.testimonial__wrapper .slick-active .testimonial__text::before {
+    left: 0;
+    top: 0;
+    transform: translate(-50%,-50%);
+}
+.testimonial__wrapper .slick-active .testimonial__text::after {
+    transform: rotate(180deg) translate(-50%,-50%);
+    right: 0;
+    bottom: 0;
+    
+}
+
+.owl-pages__list {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonials .owl-pages__item {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-right: 1rem;
+    transition: all .2s ease;
+    transform: scale(.7);
+    opacity: .3;
+    border: 4px solid transparent;
+    background: linear-gradient(180deg, #a64eee 0%, #3c35ce 100%);
+}
+.testimonials .owl-pages__item.active,
+.testimonials .owl-pages__item:hover {
+ 
+ border-color:#3c35ce;
+ background:0 0;
+ transform:scale(1)
+}

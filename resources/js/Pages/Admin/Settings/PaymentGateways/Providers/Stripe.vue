@@ -1,0 +1,66 @@
+<template>
+  <form @submit.prevent="form.patch(data.urls.submit_form)">
+    <Input
+      v-model="form.name"
+      name="name"
+      :label="__('Display Name')"
+      :required="true"
+    />
+    <Input
+      v-model="form.keys.publishable_key"
+      name="keys.publishable_key"
+      :label="__('Publishable Key')"
+      :required="true"
+    />
+    <Input
+      v-model="form.keys.secret_key"
+      name="keys.secret_key"
+      :label="__('Secret Key')"
+      :required="true"
+    />
+    <CheckBox v-model="form.inactive" name="inactive" :label="__('Inactive')" />
+    <div class="mb-3">
+      <SubmitButton :disabled="form.processing" />
+    </div>
+  </form>
+</template>
+
+<script>
+import {
+  Select,
+  Input,
+  CheckBox,
+  SubmitButton,
+} from "../../../../../components/Form/Index.js";
+
+export default {
+  components: {
+    Select,
+    Input,
+    CheckBox,
+    SubmitButton,
+  },
+  inject: ["data"],
+  data() {
+    return {
+      form: this.$inertia.form(this.prepareForm()),
+    };
+  },
+  methods: {
+    prepareForm() {
+      let inputs = {
+        name: null,
+        keys: {
+          publishable_key: null,
+          secret_key: null,
+        },
+        inactive: null,
+      };
+      if (this.data.settings) {
+        inputs = { ...inputs, ...this.data.settings };
+      }
+      return inputs;
+    },
+  },
+};
+</script>

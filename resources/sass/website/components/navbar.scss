@@ -1,0 +1,68 @@
+.navbar {
+    transition: padding 0.1s ease-in-out;
+    padding: 0.85rem 0;
+    // background: #fff;
+    background: #a64eee;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #a64eee 0%, #3c35ce 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #a64eee 0%, #3c35ce 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #a64eee 0%, #3c35ce 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a64eee', endColorstr='#3c35ce',GradientType=1 );
+  /* IE6-9 */
+}
+.navbar-nav {
+    font-size: 14px;
+}
+.navbar-nav .dropdown-menu {
+    border-radius: 0px;
+    font-size: 14px;
+}
+
+.navbar-scrolled{
+    box-shadow: 0 4px 14px -4px rgba(21,88,168,.2),0 2px 25px -5px rgba(21,88,168,.1),0 1px 1px rgba(21,88,168,.05);
+    padding: 0.2rem;
+}
+
+.navbar.top-nav-collapse {
+    padding: 0.2rem;
+    border-bottom: 1px solid hsla(0, 9%, 37%, 0.1);
+}
+
+.navbar .nav-link {
+    color: #fff;
+    display: block;
+    padding: 0.5rem !important;
+    font-weight: 500 !important;
+    margin: 0 0.5rem !important;
+    transition: all 0.2s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #4ca8c6;
+}
+
+.link-order > .nav-link {
+    color: #fff;
+    background: #78cd62;
+    background-repeat: repeat;
+    background-image: none;
+    background-image: linear-gradient(180deg, #95f08b 0, #1db01b);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FF95F08B",endColorstr="#FF1DB01B",GradientType=0);
+    font-weight: 600;
+    box-shadow: 0 10px 25px 5px rgba(120, 205, 98, 0.5),
+        0 10px 15px rgba(120, 205, 98, 0.75);
+    border-radius: 10em;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+.link-order > .nav-link:hover {
+    color: #fff;
+    background-image: linear-gradient(180deg, #b9f5ad 0, #22c620);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFB9F5AD",endColorstr="#FF22C620",GradientType=0);
+    box-shadow: 0 25px 45px 0 #78cd62;
+}

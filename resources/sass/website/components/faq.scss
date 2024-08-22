@@ -1,0 +1,95 @@
+.faq .section__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 8px;
+    background-color: #f7f9fa;
+    text-align: center;
+    margin-bottom: 36px;
+    padding: 0.8rem 1rem;
+    min-height: 72px;
+}
+.faq .panel {
+    box-shadow: 0 4px 14px -4px rgba(21, 88, 168, 0.2),
+        0 2px 25px -5px rgba(21, 88, 168, 0.1),
+        0 1px 1px rgba(21, 88, 168, 0.05);
+    padding: 15px;
+}
+.faq .panel {
+    border-bottom: 0;
+    box-shadow: 0 10px 35px #d9e3e7;
+    border-radius: 8px;
+    background-color: #fff;
+    margin-bottom: 24px;
+}
+
+.faq .panel-body hr {
+    border-top: 3px solid #7ac8ed;
+    line-height: 22px;
+    padding: 1rem 0 1.2rem;
+    margin-bottom: 0;
+}
+
+.faq .panel-heading {
+    padding: 0;
+    border: 0;
+}
+.faq .panel-title > a,
+.panel-title > a:active {
+    display: block;
+
+    color: #555;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    text-decoration: none;
+}
+.faq .panel-heading a:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f107";
+    float: right;
+    transition: all 0.5s;
+}
+.faq .panel-heading.active a:before {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+
+
+.sidenav__list{
+    list-style-type: none;
+    padding: 0;
+}
+.is-faq .sidenav__btn {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #010648;
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0;
+    margin-bottom: 15px;
+}
+.is-faq .sidenav__btn.highlighted {
+    color: #ff7f56;
+}
+
+.is-faq h2 {
+    display: inline-block;
+    align-self: flex-start;
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+.faq_active{
+    display: block;
+}
+.faq_inactive{
+    display: none;
+}

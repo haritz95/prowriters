@@ -1,0 +1,45 @@
+@import "../_variables.scss";
+@import "../bootstrap-rtl/scss/bootstrap-rtl.scss";
+
+
+/* Bootstrap specific rtl */
+.form-control {
+    text-align: right;
+    direction: rtl !important;
+}
+.text-end {
+    text-align: left !important;
+}
+
+.text-left {
+    text-align: right !important;
+}
+
+.mr-auto {
+    margin-left: auto !important;
+    margin-right: 0 !important;
+}
+
+.ml-auto {
+    margin-right: auto !important;
+    margin-left: 0 !important;
+}
+
+.dropdown-menu-right {
+    left: 0 !important;
+    right: auto !important;
+}
+
+.dropdown-menu-left {
+    right: 0 !important;
+    left: auto !important;
+}
+
+.float-right {
+    float: left !important;
+}
+
+.float-left {
+    float: right !important;
+}
+/* End of Bootstrap specific rtl */

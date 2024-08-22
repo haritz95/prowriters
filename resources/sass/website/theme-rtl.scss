@@ -1,0 +1,110 @@
+@import "./theme-variables";
+@import "../bootstrap-rtl/scss/bootstrap-rtl.scss";
+@import "./theme-base.scss";
+@import "~intel-tel-input-rtl/build/css/intlTelInput.css";
+@import "./components/how_it_works_rtl";
+
+.steps-list__mark, 
+.steps-list__mark::before 
+.steps-list__item:not(:last-child)::after {
+    left: auto !important;
+    right:50% !important;
+}
+/* Bootstrap specific rtl */
+.form-control {
+    text-align: right;
+    direction: rtl !important;
+}
+
+.text-end {
+    text-align: left !important;
+}
+
+.text-left {
+    text-align: right !important;
+}
+
+.mr-auto {
+    margin-left: auto !important;
+    margin-right: 0 !important;
+}
+
+.ml-auto {
+    margin-right: auto !important;
+    margin-left: 0 !important;
+}
+
+.dropdown-menu-right {
+    left: 0 !important;
+    right: auto !important;
+}
+
+.dropdown-menu-left {
+    right: 0 !important;
+    left: auto !important;
+}
+
+.float-right {
+    float: left !important;
+}
+
+.float-left {
+    float: right !important;
+}
+/* End of Bootstrap specific rtl */
+
+.flag-icon-holder {
+    margin-left: 15px;
+}
+
+/* Select2 rtl */
+html[dir="rtl"]
+    .select2-container--bootstrap4
+    .select2-selection--single
+    .select2-selection__arrow
+    b {
+    margin-left: auto;
+    margin-right: -4px;
+}
+html[dir="rtl"]
+    .select2-container--bootstrap4
+    .select2-selection--single
+    .select2-selection__arrow {
+    left: 3px;
+    right: auto;
+}
+html[dir="rtl"]
+    .select2-container--bootstrap4
+    .select2-selection--multiple
+    .select2-selection__choice {
+    padding-right: 0;
+    padding-left: 5px;
+    float: right;
+    margin-right: 0;
+    margin-left: 5px;
+}
+html[dir="rtl"]
+    .select2-container--bootstrap4
+    .select2-selection--multiple
+    .select2-selection__choice__remove {
+    margin-left: 1px;
+    margin-right: 3px;
+    float: right;
+}
+html[dir="rtl"]
+    .input-group-prepend
+    ~ .select2-container--bootstrap4
+    .select2-selection {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0.2rem;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0.2rem;
+}
+html[dir="rtl"] .select2-container--bootstrap4 .select2-selection__clear {
+    padding-right: 0.3em;
+    padding-left: 0;
+    float: left;
+    margin-right: auto;
+    margin-left: 0.3em;
+}
+/* End of Select2 rtl */
